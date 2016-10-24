@@ -1,0 +1,160 @@
+body {
+    background-image: url(bg.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:100%;
+    
+}
+
+#mainblock{
+	margin:auto;
+    text-align:center;
+	background-color:rgba(255,255,255,0.5);  
+    width:70%;
+    border-radius:25px;
+	position:relative;
+	top: 100px;
+	padding-top: 15px;
+	padding-bottom: 40px;
+	padding-left: 15px;
+	padding-right: 10px;
+	line-height: 150%;
+	font-weight: bold;
+}
+
+#form{
+	margin:auto;
+    text-align:center;
+	background-color:rgba(255,255,255,0.5);  
+    /*border: solid #a1a1a1;*/
+    /*padding:20px 20px; */
+    width:30%;
+    border-radius:25px;
+	position:relative;
+	top: 110px;
+	padding-top: 15px;
+	padding-bottom: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 150%;
+	font-weight: bold;
+}
+
+#add_event{
+	margin:auto;
+    text-align:center;
+	background-color:rgba(255,255,255,0.5);  
+    margin-top: 40px;
+	/*border-top: 50px;*/
+    /*padding:20px 20px; */
+    width:30%;
+    border-radius:25px;
+	padding-top: 15px;
+	padding-bottom: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 150%;
+	font-weight: bold;
+}
+
+#content{
+	margin:auto;
+    text-align:center;
+	position:relative;
+	top: 110px;
+	font-weight: bold;
+}
+
+#Title{
+	margin:auto;
+    text-align:center;
+	position:relative;
+	top: 90px;
+	font-family: Georgia;
+}
+
+.title{
+	margin:auto;
+    text-align:center;
+	position:relative;
+	top:50px;
+	font-family: Georgia;
+}
+
+#qButton{
+	position: relative;
+	top: 10px;
+}
+
+.click{
+	width: 100px; 
+	height: 30px; 
+	background-color: #2894FF; 
+	border-radius: 5px;
+	font-weight: bold;
+	font-color: white;
+	color: #FFFFFF;
+}
+
+/*.select,.un-register,.delete,#show_add{
+	width: 90px; 
+	height: 30px; 
+	background-color: #2894FF; 
+	border-radius: 5px;
+	font-weight: bold;
+	font-color: white;
+	color: #FFFFFF;
+}*/
+
+table{
+	margin:auto;
+	align:'center';
+	border-collapse:collapse;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+table,th, td{
+    border: 1px solid;
+	text-align: center;
+	padding: 15px;
+	
+}
+
+#userinfo{
+	margin:auto;
+    text-align:center;
+	background-color:rgba(255,255,255,0.5);  
+    width:70%;
+    border-radius:25px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 10px;
+}
+
+#subtitle{
+	font-family: Georgia;
+	font-size: 30px;
+}
+/*
+#add_event{
+	display:none;
+}*/
+
+#edit_event{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

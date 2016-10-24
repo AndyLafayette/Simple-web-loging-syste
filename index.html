@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html>
+   <head>
+   <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
+	  <script type = "text/javascript">
+            
+            $(document).ready(function(){
+			   $("#qButton").on('click', function(){
+               console.log("User clicked the Content Changer Button");
+
+                $.ajax("DB_Aja.php", 
+                  {
+                    // The type of data we're receiving
+                    dataType: 'html',
+
+                    data:{
+                        "Username": $("#username").val(),
+                        "Password": $("#password").val(),
+						"Type": $("#type").val()
+                    },
+
+                    // Define a function to be executed on success
+                    success: function(data) {
+                        console.log("Data Received");
+
+                        $("#ajaxDiv").html(data);
+						if (data != "<p>The user does not exist !!!</p>")
+						{
+						    window.location.href="Events_list.php";
+                        }							
+                    },
+
+                    // What to do on error
+                    error: function() {
+                        $("#ajaxDiv").html("Error Receiving Data");
+                    },
+
+                    // How to send the data
+                    type:'GET'
+                });
+				
+				//$("p").hide();
+				//$("input").hide();
+				
+              });
+			});
+      </script>
+	  <h1 class = 'title' id = 'Title'>University of Nottingham</h1><br>
+      <form name = 'myForm' id = 'form' action = 'DB_Ajax.php' method = 'GET'>
+		<h2 id = 'logonFormTitle'><b>Log on</b></h2>
+		<label>username:</label> <br>
+        <input type = "text" id = "username" name = "Username"/><br>
+        <label>password:</label><br>
+        <input type = "text" id = "password" name = "Password"/><br>
+		<label>type:</label><br>
+		<select type = "text" id = "type" name = "Type">
+         <option value ="Normal">Normal</option>
+         <option value ="Administrative">Administrative</option>
+        </select><br>
+        <input type = "submit" class = 'click' id="qButton" value = "Log On" /><br> 
+      </form>
+      <div id = 'content'>
+    <p>If you have not sign in, please click:</p>
+    <a href = "sign_in.html">sign in</a>
+	<br>
+	<p id = 'ajaxDiv'>Your result will display here</p>
+	  </div>
+   </body>
+</html>

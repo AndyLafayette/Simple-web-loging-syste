@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <form id = 'mainblock' action = "insert.php" method = "POST">
+    <h2 id = 'logonFormTitle'><b>Please fill your information</b></h2>  
+	  <label>Username:</label> <br>
+      <input type = "text" name = "Username" /><br>
+      <label>Password:</label> <br>
+      <input type = "text" name = "Passwords" /><br>
+      <label>Email:</label> <br>
+      <input type = "email" name = "Email" /><br>
+      <label>Phone:</label> <br>
+      <input type = "text" name = "Phone" /><br>
+      <label>Type:</label> <br>
+      <select type = "text" name = "Type">
+         <option value ="Normal">Normal</option>
+         <option value ="Administrative">Administrative</option>
+      </select><br><br>
+      <input class = 'click' type = "submit" value = "Sign In" /><br>
+	  <a href = 'index.html'>Back to the main page</a>
+    </form>
+	<br>
+  </body>
+</html>
